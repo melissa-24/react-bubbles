@@ -20,10 +20,12 @@ const BubblePage = () => {
   }, []);
 
   return (
-    <div>
-      <p>Testing</p>
+    <div className="fun">
+      <p>Fun With Bubbles</p>
+      <div className="colors">
       <ColorList colors={colorList} updateColors={setColorList} />
       <Bubbles colors={colorList} />
+      </div>
     </div>
   );
 };
